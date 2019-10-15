@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.database_project">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="Student Marks"
+        android:roundIcon="@drawable/icon"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ViewMark"
+            android:label="Student Marks"></activity>
+        <activity android:name=".ViewDetails"
+            android:label="Student Details"/>
+        <activity android:name=".Mark"
+            android:label="Marks"/>
+        <activity android:name=".Details"
+            android:label="Registration"/>
+        <activity android:name=".Student"
+            android:label="Student Section"/>
+        <activity android:name=".Staff"
+            android:label="Staff"/>
+        <activity android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
